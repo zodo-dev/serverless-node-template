@@ -1,8 +1,13 @@
-[
-  {
-    "name": "Smith"
-  },
-  {
-    "name": "John"
-  }
-]
+{
+  "body": [
+    {
+      "name": "Filipe"
+    },
+    {
+      "name": "Leo"
+    },
+    {
+      "name": "Ney"
+    }
+  ]
+}
