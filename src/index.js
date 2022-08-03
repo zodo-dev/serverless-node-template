@@ -1,7 +1,22 @@
 const { api } = require("./api");
 const { ENDPOINT: endpoint } = process.env;
 
-const handler = async (events = []) => {
+const bodyAsObject = (body) => {
+  if (typeof body === "string") {
+    return JSON.parse(body);
+  }
+  return body;
+};
+
+exports.handler = async ({ body, ...event }) => {
+  const events = bodyAsObject(body);
+  console.log({ events, event });
+  if (!events?.length) {
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "Input error." }),
+    };
+  }
   const results = await Promise.all(
     events.map(({ name }) => {
       return api(endpoint, name);
@@ -11,8 +26,4 @@ const handler = async (events = []) => {
     statusCode: 200,
     body: JSON.stringify({ results }),
   };
-};
-exports.handler = handler;
-module.exports = {
-  handler,
 };
