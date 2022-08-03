@@ -1,7 +1,7 @@
 {
   "name": "aws-lambda-node-template",
   "version": "1.0.0",
-  "description": "Node JS AWS Lambda template",
+  "description": "AWS Lambda template for Node 16",
   "type": "commonjs",
   "scripts": {
     "build:lambda": "npm run build:clean && npm run build:webpack",
