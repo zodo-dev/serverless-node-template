@@ -1,6 +1,6 @@
 {
   "name": "@zodo-dev/serverless-node-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Serverless template generator for Node",
   "type": "commonjs",
   "publishConfig": {
