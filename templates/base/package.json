@@ -1,0 +1,35 @@
+{
+  "name": "project_name",
+  "version": "1.0.0",
+  "description": "Serverless template for Node",
+  "type": "commonjs",
+  "scripts": {
+    "build:prod": "NODE_ENV=production npm run build:clean && npm run build:webpack",
+    "build:dev": "npm run build:clean && npm run build:webpack",
+    "build:webpack": "webpack",
+    "build:clean": "rm -rf dist/",
+    "test": "npm run build:prod && node test/test.js"
+  },
+  "keywords": [],
+  "author": "Edimar Cardoso <edimarlnx@gmail.com>",
+  "homepage": "https://github.com/zodo-dev/serverless-node-template",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "terser-webpack-plugin": "^5.3.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "zip-webpack-plugin": "^4.0.1"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
