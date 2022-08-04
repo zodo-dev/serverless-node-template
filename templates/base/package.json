@@ -4,7 +4,7 @@
   "description": "Serverless template for Node",
   "type": "commonjs",
   "scripts": {
-    "build:prod": "NODE_ENV=production npm run build:clean && npm run build:webpack",
+    "build:prod": "npm run build:clean && NODE_ENV=production npm run build:webpack",
     "build:dev": "npm run build:clean && npm run build:webpack",
     "build:webpack": "webpack",
     "build:clean": "rm -rf dist/",

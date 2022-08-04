@@ -1,6 +1,6 @@
 const ZipPlugin = require("zip-webpack-plugin");
 const path = require("path");
-const { name } = require("../../package.json");
+const { name } = require("./package.json");
 
 const serverlessOutputName = name.includes("/") ? name.split("/")[2] : name;
 const isProd = process.env?.NODE_ENV === "production";

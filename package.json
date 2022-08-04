@@ -1,8 +1,11 @@
 {
   "name": "@zodo-dev/serverless-node-template",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Serverless template generator for Node",
   "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "@zodo-dev/serverless-node-template": "./npx/index.js"
   },
