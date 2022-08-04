@@ -13,6 +13,7 @@
     "template:test": "npm run template:clean  && npm i -g && npm run template:test-run && npm remove -g",
     "template:test-run": "cd template-test/ && npx '@zodo-dev/serverless-node-template' tpl-name aws",
     "template:clean": "rm -rf template-test && mkdir template-test",
+    "publish:version-patch": "npm version patch",
     "publish:npm": "npm publish"
   },
   "keywords": [
