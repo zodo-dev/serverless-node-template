@@ -25,3 +25,8 @@ npm run build:dev
 ```shell
 npm run test
 ```
+
+### Running this sample function in production
+
+The file `.env` is only used in the development environment.
+To run in the cloud, you need to create the environment variables in the function before running.

@@ -1,4 +1,4 @@
-# Generator serverless template for Node
+# Serverless template generator for Node
 
 ### Create template with *npx*
 
